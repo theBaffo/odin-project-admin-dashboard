@@ -176,6 +176,25 @@ body {
     font-size: 1.25rem;
 }
 
+#header-buttons {
+    display: grid;
+}
+
+#header-buttons div {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 20px;
+    align-self: flex-end;
+    justify-content: end;
+}
+
+.header-button {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
 
 #content {
     display: grid;
