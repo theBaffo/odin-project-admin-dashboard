@@ -104,7 +104,7 @@ body {
 
 #search-bar div {
     align-self: flex-start;
-    justify-self: start;
+    justify-self: stretch;
     display: grid;
     grid-template-columns: 1fr 14fr;
     gap: 10px;
