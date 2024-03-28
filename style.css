@@ -148,6 +148,35 @@ body {
     font-size: 2rem;
 }
 
+#user-info {
+    display: grid;
+}
+
+#user-info div {
+    display: grid;
+    grid-template-columns: 60px 300px;
+    gap: 5px;
+    align-self: flex-end;
+    justify-content: start;
+}
+
+#user-info div span.user-icon {
+    grid-row: 1 / span 2;
+    align-self: center;
+    font-size: 3rem;
+}
+
+#user-info div span.user-hello {
+    align-self: center;
+    font-size: 0.75rem;
+}
+
+#user-info div span.user-name {
+    align-self: center;
+    font-size: 1.25rem;
+}
+
+
 #content {
     display: grid;
     background-color: gainsboro;
