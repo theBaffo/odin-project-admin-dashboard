@@ -87,7 +87,30 @@ body {
 
 #header {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: white;
+    padding: 10px;
+}
+
+#search-bar-widget {
+    display: grid;
+    grid-template-columns: 1fr 14fr;
+}
+
+#search-bar-widget label {
+    align-self: center;
+}
+
+#search-bar-widget input {
+    align-self: center;
+    border-radius: 10px;
+    background-color: lightgray;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+#search-bar-widget input:focus {
+    outline: none;
 }
 
 #content {
