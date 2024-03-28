@@ -95,7 +95,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 #search-bar {
@@ -103,6 +103,7 @@ body {
 }
 
 #search-bar div {
+    align-self: flex-start;
     justify-self: start;
     display: grid;
     grid-template-columns: 1fr 14fr;
