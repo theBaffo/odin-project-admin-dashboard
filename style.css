@@ -95,19 +95,25 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
-#search-bar-widget {
+#search-bar {
+    display: grid;
+}
+
+#search-bar div {
+    justify-self: start;
     display: grid;
     grid-template-columns: 1fr 14fr;
+    gap: 10px;
 }
 
-#search-bar-widget label {
+#search-bar div label {
     align-self: center;
 }
 
-#search-bar-widget input {
+#search-bar div input {
     align-self: center;
     border-radius: 10px;
     background-color: lightgray;
@@ -115,8 +121,30 @@ body {
     padding: 5px;
 }
 
-#search-bar-widget input:focus {
+#search-bar div input:focus {
     outline: none;
+}
+
+#user-buttons {
+    display: grid;
+}
+
+#user-buttons div {
+    display: grid;
+    grid-template-columns: 30px 30px 150px;
+    gap: 15px;
+    align-self: flex-start;
+    justify-content: end;
+}
+
+#user-buttons div span {
+    align-self: center;
+    justify-self: end;
+    font-size: 1.25rem;
+}
+
+#user-buttons div span.user-icon {
+    font-size: 2rem;
 }
 
 #content {
