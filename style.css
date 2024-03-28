@@ -200,7 +200,7 @@ body {
     display: grid;
     background-color: #e5e5e5;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 6fr 1fr 6fr;
+    grid-template-rows: 1fr 6fr 1fr 6fr 1fr;
     padding: 10px;
     gap: 5px 20px;
 }
@@ -221,10 +221,39 @@ body {
 }
 
 .project-item {
+    display: grid;
+    gap: 5px;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 2fr 1fr;
     background-color: white;
     border-radius: 10px;
     border-left: 8px solid orange;
     box-shadow: 2px 4px lightgray;
+    padding: 10px;
+}
+
+.project-item h5 {
+    grid-column: 1 / span 2;
+    margin: 0;
+    font-size: 1rem;
+    align-self: flex-end;
+}
+
+.project-item p {
+    grid-column: 1 / span 2;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.project-item .project-item-icons {
+    grid-column: 1 / span 2;
+    text-align: end;
+    align-self: flex-end;
+}
+
+.project-item .project-item-icons span {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #announcements {
