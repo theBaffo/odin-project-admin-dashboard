@@ -257,10 +257,40 @@ body {
 }
 
 #announcements {
+    display: grid;
+    gap: 10px;
+    grid-column: 1fr;
+    grid-row: 1fr 1fr 1fr;
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 2px 4px lightgray;
+}
+
+.announcements-item {
+    display: grid;
+    gap: 5px;
+    grid-column: 1fr;
+    grid-row: 1fr 2fr;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 5px;
+}
+
+.announcements-item:last-child {
+  border: 0;
+}
+
+.announcements-item h5 {
+    margin: 0;
+    font-size: 0.9rem;
+    align-self: flex-end;
+}
+
+.announcements-item p {
+    grid-column: 1 / span 2;
+    margin: 0;
+    font-size: 0.7rem;
+    align-self: flex-start;
 }
 
 #trending {
